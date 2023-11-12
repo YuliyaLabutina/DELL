@@ -1,0 +1,180 @@
+@media only screen and (min-width: 300px) {
+  .display {
+    display: none;
+    background: none;
+  }
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+  header {
+    padding: 15px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 55px;
+  }
+  .menu-mobile {
+    display: flex;
+
+  }
+
+  .service_content {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    position: relative;
+  }
+  .icon_service {
+    width: 23px;
+    height: 23px;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  .service_list {
+    background-color: rgba(249, 249, 249, 1);
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .service_list:first-child {
+    background: none;
+    margin-right: 17px;
+  }
+  .service_list:nth-child(2) {
+    margin-right: 15px;
+  }
+  .service_list:nth-child(3) {
+    margin-right: 15px;
+  }
+  .service_list:last-child {
+    background: none;
+    margin-right: 0;
+  }
+  .find-mobile {
+    background-image: url(/img/header/лупа.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .profile-mobile {
+    background-image: url(img/header/profil.svg);
+    background-repeat: no-repeat;
+  }
+  .shop-mobile {
+    background-image: url(img/header/shop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+  }
+  /* бургер */
+  .main-nav {
+    float: left;
+    overflow: hidden;
+  }
+
+  .site-navigation {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    left: 0;
+
+    z-index: 1;
+  }
+  .site-navigation-item {
+    background: #fff;
+    padding-left: 38px;
+    padding-top: 56px;
+    padding-bottom: 45px;
+  }
+  .site-navigation-item a {
+    color: #292d32;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .main-nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  .main-nav-toggle {
+    position: absolute;
+left: 310px;
+top:17px;
+    z-index: 2;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: #e7e7de;
+    cursor: pointer;
+    background: none;
+    border: none;
+    background-position: center;
+  }
+  .main-nav-closed .main-nav-toggle::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 18px;
+    height: 1.5px;
+    background-color: rgba(41, 45, 50, 1);
+    box-shadow: 0 8px 0 0 rgba(41, 45, 50, 1), 0 16px 0 0 rgba(41, 45, 50, 1);
+  }
+  .main-nav-opened .main-nav-toggle {
+    position: absolute;
+  }
+  .main-nav-opened .main-nav-toggle::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 18px;
+    height: 2px;
+    background-color: #292d32;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+  .main-nav-opened .main-nav-toggle::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    width: 18px;
+    height: 2px;
+    background-color: #292d32;
+    transform: rotate(-45deg);
+  }
+
+  .site-navigation.opened {
+    display: block;
+    list-style: none;
+    margin: 0;
+    margin-top: 90px;
+  }
+  .site-navigation.closed {
+    display: none;
+  }
+
+  .site-navigation-item :last-child {
+    padding-bottom: 64px;
+  }
+}
+/* МОГУ ВЫПОЛНИТЬ ДАЛЬШЕ,НЕ ХВАТИЛО ВРЕМЕНИ */
